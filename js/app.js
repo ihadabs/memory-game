@@ -24,7 +24,6 @@ const updateTimer = () => {
 };
 
 const startTimer = () => setInterval(updateTimer, 300);
-const stopTimer = () => clearInterval(startTimer);
 
 const sleep = time => {
   return new Promise(resolve => setTimeout(resolve, time));

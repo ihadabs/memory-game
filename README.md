@@ -1,20 +1,26 @@
 # Memory Game Project
 
+Check it out at the following link
+
+[Memory Game Link](https://ihadabs.github.io/)
+
 ## Table of Contents
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+- [Description](#Description)
+- [References](#References)
+- [Resources](#Resources)
 
-## Instructions
+## Description
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+This project is a memory game. When the player open the website cards are opend for short time. The player is expected to match the cards in minmum number of moves. The star ratings are 3 stars for 25 moves or less, 2 stars for 35 moves or less, 1 star for 45 moves or less, and no starts for greater than 45 moves :(
 
-To get started, open `js/app.js` and start building out the app's functionality
+In case the user win the game (all cards have been matched), the result will show and he will be asked if he want to restart the game.
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+## References
 
-## Contributing
+- [Memory Game Starter Project](https://github.com/udacity/fend-project-memory-game).
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+## Resources
 
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+- [W3schools](https://www.w3schools.com/)
+- [MDN web docs](https://developer.mozilla.org/en-US/)

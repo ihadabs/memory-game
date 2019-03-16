@@ -5,6 +5,7 @@
 - [Description](#Description)
 - [References](#References)
 - [Resources](#Resources)
+- [Dependencies](#Dependencies)
 
 ## Description
 

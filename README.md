@@ -12,7 +12,7 @@ This project is a memory game. When the player open the website cards are opend 
 
 In case the user win the game (all cards have been matched), the result will show and he will be asked if he want to restart the game.
 
-How to play? At first the cards will show, match all cards, if all cards are matched, you win
+How to play? At first the cards will show, match all cards, if all cards are matched, you win, a congratulations popup will appear showing your results.
 
 ## References
 

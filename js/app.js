@@ -13,7 +13,6 @@ let stop = true;
 
 const stars3 = 25;
 const stars2 = 35;
-const stars1 = 45;
 
 const getElapsedTime = () => (new Date() - timestamp) / 1000;
 
@@ -45,7 +44,7 @@ const updateStarRating = reset => {
   stars.forEach((star, i) => {
     if (i == 2) fillStar(star, numberOfMoves <= stars3);
     if (i == 1) fillStar(star, numberOfMoves <= stars2);
-    if (i == 0) fillStar(star, numberOfMoves <= stars1);
+    if (i == 0) fillStar(star, true);
   });
 };
 
@@ -63,7 +62,7 @@ const updateNumberOfMoves = number => {
   let moves = document.querySelector(".moves");
   if (number === 0) numberOfMoves = 0;
   else ++numberOfMoves;
-  moves.innerHTML = numberOfMoves;
+  moves.innerHTML = Math.floor(numberOfMoves / 2);
   updateStarRating();
 };
 
@@ -109,12 +108,11 @@ const matchCards = cards => {
   cards.forEach(card => {
     card.classList.add("match");
   });
-  sleep(50).then(() => {
-    if (matchedCards >= allCards.length) {
-      stopTimer();
+  if (matchedCards >= allCards.length) {
+    sleep(20).then(() => {
       allMatched();
-    }
-  });
+    });
+  }
 };
 
 allCards.forEach(card => {
@@ -166,13 +164,7 @@ startTimer();
 
 const allMatched = () => {
   const starRating =
-    numberOfMoves <= stars3
-      ? 3
-      : numberOfMoves <= stars2
-      ? 2
-      : numberOfMoves <= stars1
-      ? 3
-      : 0;
+    numberOfMoves <= stars3 ? 3 : numberOfMoves <= stars2 ? 2 : 3;
   const wantToRestart = window.confirm(
     "Congratulations, you have made it!" +
       "\n" +
